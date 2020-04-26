@@ -1,4 +1,4 @@
-const maxProfit = function (prices) {
+const maxProfit = function(prices) {
   let min = prices[0];
   let profit = 0;
   for (let i = 1; i < prices.length; i++) {
@@ -8,4 +8,5 @@ const maxProfit = function (prices) {
       min = Math.min(min, prices[i]);
     }
   }
+  return profit;
 };
