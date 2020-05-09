@@ -3,9 +3,9 @@
  */
 
 function insertionSort(arr) {
-  const size = arr.length
+  const len = arr.length
   let fr, lr, mid, cur
-  for (let i = 1; i < size; i++) {
+  for (let i = 1; i < len; i++) {
     fr = 0
     lr = i - 1
     cur = arr[i]

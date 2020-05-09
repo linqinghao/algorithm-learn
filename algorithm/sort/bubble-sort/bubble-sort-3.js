@@ -3,9 +3,9 @@
  */
 
 function bubbleSort(arr) {
-  let size = arr.length
+  let len = arr.length
   let start = 0
-  let end = size - 1
+  let end = len - 1
   while (start < end) {
     for (let i = start; i < end; i++) {
       if (arr[i] > arr[i + 1]) {

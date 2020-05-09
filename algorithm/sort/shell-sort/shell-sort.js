@@ -3,12 +3,12 @@
  */
 
 function shellSort(arr) {
-  let size = arr.length
+  let len = arr.length
   // 取中间值
-  let gap = size >> 1
+  let gap = len >> 1
 
   while (gap > 0) {
-    for (let i = gap; i < size; i++) {
+    for (let i = gap; i < len; i++) {
       let temp = arr[i]
       let preIndex = i - gap
       // 若前一个间隔值大于当前间隔值，则交换位置

@@ -3,9 +3,9 @@
  */
 
 function mergeSort(arr) {
-  let size = arr.length
-  if (size < 2) return arr
-  let mid = size >> 1
+  let len = arr.length
+  if (len < 2) return arr
+  let mid = len >> 1
   let left = arr.slice(0, mid)
   let right = arr.slice(mid)
   return merge(mergeSort(left), mergeSort(right))

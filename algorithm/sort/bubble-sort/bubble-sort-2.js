@@ -3,7 +3,6 @@
  */
 
 function bubbleSort(arr) {
-  let size = arr.length
   let i = arr.length - 1
   while (i > 0) {
     let pos = 0 // 记录每趟最后的交换位置

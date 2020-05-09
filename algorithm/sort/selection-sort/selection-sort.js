@@ -3,10 +3,10 @@
  */
 
 function selectionSort(arr) {
-  const size = arr.length
-  for (let i = 0; i < size; i++) {
+  const len = arr.length
+  for (let i = 0; i < len; i++) {
     let minIndex = i
-    for (let j = i + 1; j < size; j++) {
+    for (let j = i + 1; j < len; j++) {
       if (arr[j] < arr[minIndex]) {
         minIndex = j
       }

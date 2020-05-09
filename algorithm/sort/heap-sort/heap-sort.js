@@ -3,14 +3,14 @@
  */
 
 function heapSort(arr) {
-  const size = arr.length
+  const len = arr.length
 
-  if (size <= 1) return arr
+  if (len <= 1) return arr
 
   // 构造大顶堆
   buildHeap(arr)
 
-  for (let i = size - 1; i >= 0; i--) {
+  for (let i = len - 1; i >= 0; i--) {
     // 堆首与堆尾互换
     ;[arr[i], arr[0]] = [arr[0], arr[i]]
     // 再次调整为大顶堆
@@ -21,9 +21,9 @@ function heapSort(arr) {
 }
 
 function buildHeap(arr) {
-  const size = arr.length
-  for (let i = Math.floor(size / 2); i >= 0; i--) {
-    headAdjust(arr, i, size)
+  const len = arr.length
+  for (let i = Math.floor(len / 2); i >= 0; i--) {
+    headAdjust(arr, i, len)
   }
 }
 

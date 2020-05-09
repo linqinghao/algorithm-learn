@@ -3,9 +3,9 @@
  */
 
 function insertionSort(arr) {
-  const size = arr.length
+  const len = arr.length
 
-  for (let i = 1; i < size; i++) {
+  for (let i = 1; i < len; i++) {
     const temp = arr[i]
 
     let preIndex = i - 1

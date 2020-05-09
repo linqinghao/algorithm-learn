@@ -3,14 +3,14 @@
  */
 
 function quickSort(arr) {
-  const size = arr.length
-  if (size <= 1) return arr
+  const len = arr.length
+  if (len <= 1) return arr
   const left = []
   const right = []
-  const mid = size >> 1
+  const mid = len >> 1
   const pivot = arr.splice(mid, 1)[0]
 
-  for (let i = 0; i < size - 1; i++) {
+  for (let i = 0; i < len - 1; i++) {
     if (arr[i] < pivot) {
       left.push(arr[i])
     } else {
