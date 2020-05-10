@@ -6,20 +6,20 @@ function quickSort(arr, start = 0, end = arr.length - 1) {
   if (end - start < 1) {
     return
   }
-  const target = arr[start]
+  const pivot = arr[start]
   let l = start
   let r = end
   while (l < r) {
-    while (l < r && arr[r] >= target) {
+    while (l < r && arr[r] >= pivot) {
       r--
     }
     arr[l] = arr[r]
-    while (l < r && arr[l] < target) {
+    while (l < r && arr[l] < pivot) {
       l++
     }
     arr[r] = arr[l]
   }
-  arr[l] = target
+  arr[l] = pivot
   quickSort(arr, start, l - 1)
   quickSort(arr, l + 1, end)
   return arr
